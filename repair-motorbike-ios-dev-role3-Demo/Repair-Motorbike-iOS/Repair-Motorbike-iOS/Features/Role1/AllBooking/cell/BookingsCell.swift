@@ -68,14 +68,11 @@ class BookingsCell: UITableViewCell {
             dataBooking = data
             nameLabel.text = data.userName
             numberLabel.text = data.phoneUser
-      //  dateFormatter.dateStyle = .short
-         //   dateFormatter.date(from: data.timeRepair ?? "")
         if let date = dateFormatter.date(from: data.timeRepair ?? "") {
             dateLabel.text = dateFormatterPrint.string(from: date)
         } else {
            print("There was an error decoding the string")
         }
-//            dateLabel.text = dateFormatter.string(from: "1997-05-24".toDate(.localDateTimeSec) ?? Date())
     }
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
