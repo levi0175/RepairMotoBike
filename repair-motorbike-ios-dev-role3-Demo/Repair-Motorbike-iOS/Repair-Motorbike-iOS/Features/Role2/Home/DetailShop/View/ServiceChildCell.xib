@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ServiceChildCell" customModule="Repair_Motorbike_iOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="443" height="71"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="443" height="71"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZNK-YE-3Iv">
+                        <rect key="frame" x="5" y="5" width="433" height="61"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLV-LS-OKI">
+                                <rect key="frame" x="4" y="20.5" width="294.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DdI-Go-XUw">
+                                <rect key="frame" x="302.5" y="0.0" width="1" height="61"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="1" id="5tT-m2-I9u"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Giá: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uXg-Iu-jQE">
+                                <rect key="frame" x="303.5" y="20" width="127.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="DdI-Go-XUw" firstAttribute="leading" secondItem="cLV-LS-OKI" secondAttribute="trailing" constant="4" id="9gb-TD-FvJ"/>
+                            <constraint firstItem="DdI-Go-XUw" firstAttribute="top" secondItem="ZNK-YE-3Iv" secondAttribute="top" id="H4h-qM-y63"/>
+                            <constraint firstItem="uXg-Iu-jQE" firstAttribute="centerY" secondItem="cLV-LS-OKI" secondAttribute="centerY" id="KRf-29-DTc"/>
+                            <constraint firstAttribute="bottom" secondItem="DdI-Go-XUw" secondAttribute="bottom" id="RNg-cW-Zib"/>
+                            <constraint firstItem="DdI-Go-XUw" firstAttribute="centerX" secondItem="ZNK-YE-3Iv" secondAttribute="centerX" multiplier="1.4" id="VaL-Ar-ikD"/>
+                            <constraint firstAttribute="trailing" secondItem="uXg-Iu-jQE" secondAttribute="trailing" constant="2" id="YCk-Ap-nn5"/>
+                            <constraint firstItem="uXg-Iu-jQE" firstAttribute="leading" secondItem="DdI-Go-XUw" secondAttribute="trailing" id="cAT-is-qbk"/>
+                            <constraint firstItem="cLV-LS-OKI" firstAttribute="leading" secondItem="ZNK-YE-3Iv" secondAttribute="leading" constant="4" id="eTS-A0-BIQ"/>
+                            <constraint firstItem="cLV-LS-OKI" firstAttribute="centerY" secondItem="DdI-Go-XUw" secondAttribute="centerY" id="uKF-QF-nvP"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" red="0.91372549020000005" green="0.91399997470000005" blue="0.91399997470000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="ZNK-YE-3Iv" secondAttribute="bottom" constant="5" id="6e8-2Q-SFX"/>
+                <constraint firstItem="ZNK-YE-3Iv" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="8sa-qL-gmV"/>
+                <constraint firstItem="ZNK-YE-3Iv" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="GCZ-5a-JRT"/>
+                <constraint firstAttribute="trailing" secondItem="ZNK-YE-3Iv" secondAttribute="trailing" constant="5" id="cfr-b7-mcb"/>
+            </constraints>
+            <size key="customSize" width="443" height="71"/>
+            <connections>
+                <outlet property="containView" destination="ZNK-YE-3Iv" id="Hjg-90-mvZ"/>
+                <outlet property="nameServiceLbl" destination="cLV-LS-OKI" id="y67-E0-o8W"/>
+                <outlet property="price" destination="uXg-Iu-jQE" id="qEZ-jg-jY3"/>
+            </connections>
+            <point key="canvasLocation" x="170.28985507246378" y="120.87053571428571"/>
+        </collectionViewCell>
+    </objects>
+</document>

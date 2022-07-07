@@ -1,0 +1,22 @@
+/* 
+  Localizable.strings
+  Repair-Motorbike-iOS
+
+  Created by NguyenVietAnh on 21/04/2022.
+  
+*/
+
+"Home" = "Home";
+"Setting" = "Setting";
+
+"Login" = "Login";
+"Logout" = "Logout";
+
+"Phone" = "Phone";
+"Password" = "Password";
+"Name" = "Name";
+"Gender" = "Gender";
+"Address" = "Address";
+"Avatar" = "Avatar";
+
+"Cancel" = "Cancel";

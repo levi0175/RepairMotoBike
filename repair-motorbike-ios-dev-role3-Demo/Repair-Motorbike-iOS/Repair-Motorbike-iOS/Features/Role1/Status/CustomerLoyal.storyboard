@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Customer Loyal View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="CustomerLoyalViewController" id="Y6W-OH-hqX" customClass="CustomerLoyalViewController" customModule="Repair_Motorbike_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wuu-j2-Dsc">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CyZ-0I-ARs">
+                                        <rect key="frame" x="65.5" y="726" width="283" height="236.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="CyZ-0I-ARs" secondAttribute="height" multiplier="1.2" id="ocq-e3-Zbj"/>
+                                        </constraints>
+                                    </view>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="white" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="rMy-Vw-aqo">
+                                        <rect key="frame" x="10" y="15" width="394" height="803"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="CyZ-0I-ARs" secondAttribute="bottom" multiplier="0.85" id="JHj-no-b80"/>
+                                    <constraint firstItem="CyZ-0I-ARs" firstAttribute="centerX" secondItem="wuu-j2-Dsc" secondAttribute="centerX" id="OJV-w7-At9"/>
+                                    <constraint firstAttribute="trailing" secondItem="rMy-Vw-aqo" secondAttribute="trailing" constant="10" id="aFH-HS-Ldx"/>
+                                    <constraint firstItem="rMy-Vw-aqo" firstAttribute="leading" secondItem="wuu-j2-Dsc" secondAttribute="leading" constant="10" id="g1d-Mr-16G"/>
+                                    <constraint firstAttribute="bottom" secondItem="rMy-Vw-aqo" secondAttribute="bottom" id="ox6-MM-mgE"/>
+                                    <constraint firstItem="CyZ-0I-ARs" firstAttribute="height" secondItem="wuu-j2-Dsc" secondAttribute="height" multiplier="0.288742" id="uKA-VX-kaw"/>
+                                    <constraint firstItem="rMy-Vw-aqo" firstAttribute="top" secondItem="wuu-j2-Dsc" secondAttribute="top" constant="15" id="xMs-qh-P5n"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wuu-j2-Dsc" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="3gm-M2-cTi"/>
+                            <constraint firstItem="wuu-j2-Dsc" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="pd0-1e-1Vz"/>
+                            <constraint firstItem="wuu-j2-Dsc" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="qCQ-j8-jln"/>
+                            <constraint firstItem="wuu-j2-Dsc" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="slz-VO-00f"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="listBookingTableView" destination="rMy-Vw-aqo" id="2ky-LR-2x6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="67.633928571428569"/>
+        </scene>
+    </scenes>
+</document>

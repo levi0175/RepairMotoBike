@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ScheduleCell" customModule="Repair_Motorbike_iOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="706" height="145"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="706" height="145"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u2o-za-XPs">
+                        <rect key="frame" x="10" y="3" width="686" height="139"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Garage Hoang Anh Luc" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zR7-9X-mWJ">
+                                <rect key="frame" x="90" y="30.5" width="586" height="22"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="16"/>
+                                <color key="textColor" name="TitleLabel"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Garage Hoang Anh Luc" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ly8-Z6-QHv">
+                                <rect key="frame" x="167" y="53.5" width="341" height="17"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
+                                <color key="textColor" red="0.32549019607843138" green="0.32549019607843138" blue="0.32549019607843138" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Số điện thoại:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="29H-mr-Jem">
+                                <rect key="frame" x="90" y="53.5" width="75" height="17"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="12"/>
+                                <color key="textColor" name="ColorLabel"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thời gian:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R97-fe-XOY">
+                                <rect key="frame" x="90" y="71.5" width="57.5" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                <color key="textColor" name="ColorLabel"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="slide4" translatesAutoresizingMaskIntoConstraints="NO" id="f3r-1i-BsH">
+                                <rect key="frame" x="10" y="34.5" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="AaX-BZ-7y5"/>
+                                    <constraint firstAttribute="height" constant="70" id="Iks-xa-W4z"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30-4-2022 9:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BqM-iH-WM1">
+                                <rect key="frame" x="149.5" y="70.5" width="376" height="17"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="12"/>
+                                <color key="textColor" name="ColorLabel"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="29H-mr-Jem" firstAttribute="top" secondItem="zR7-9X-mWJ" secondAttribute="bottom" constant="1" id="7kk-Oi-47e"/>
+                            <constraint firstItem="BqM-iH-WM1" firstAttribute="centerY" secondItem="R97-fe-XOY" secondAttribute="centerY" id="AlC-PH-tTW"/>
+                            <constraint firstItem="R97-fe-XOY" firstAttribute="top" secondItem="29H-mr-Jem" secondAttribute="bottom" constant="1" id="Buk-8T-RLV"/>
+                            <constraint firstItem="zR7-9X-mWJ" firstAttribute="centerY" secondItem="f3r-1i-BsH" secondAttribute="centerY" multiplier="0.6" id="Guo-TE-eCl"/>
+                            <constraint firstItem="29H-mr-Jem" firstAttribute="leading" secondItem="f3r-1i-BsH" secondAttribute="trailing" constant="10" id="HUX-eY-oos"/>
+                            <constraint firstItem="BqM-iH-WM1" firstAttribute="leading" secondItem="R97-fe-XOY" secondAttribute="trailing" constant="2" id="MNm-uS-82O"/>
+                            <constraint firstItem="ly8-Z6-QHv" firstAttribute="leading" secondItem="29H-mr-Jem" secondAttribute="trailing" constant="2" id="Pwp-P4-xbv"/>
+                            <constraint firstItem="f3r-1i-BsH" firstAttribute="centerY" secondItem="u2o-za-XPs" secondAttribute="centerY" id="fWt-wH-9AJ"/>
+                            <constraint firstItem="f3r-1i-BsH" firstAttribute="leading" secondItem="u2o-za-XPs" secondAttribute="leading" constant="10" id="gcJ-Au-Vzs"/>
+                            <constraint firstItem="zR7-9X-mWJ" firstAttribute="leading" secondItem="f3r-1i-BsH" secondAttribute="trailing" constant="10" id="gdD-Q6-OTT"/>
+                            <constraint firstItem="R97-fe-XOY" firstAttribute="leading" secondItem="f3r-1i-BsH" secondAttribute="trailing" constant="10" id="nHq-wI-R8i"/>
+                            <constraint firstItem="ly8-Z6-QHv" firstAttribute="width" secondItem="u2o-za-XPs" secondAttribute="width" multiplier="0.497085" id="pgA-ls-r4Y"/>
+                            <constraint firstAttribute="trailing" secondItem="zR7-9X-mWJ" secondAttribute="trailing" constant="10" id="qeg-Zo-9RL"/>
+                            <constraint firstItem="BqM-iH-WM1" firstAttribute="width" secondItem="u2o-za-XPs" secondAttribute="width" multiplier="0.548105" id="sei-dR-EhD"/>
+                            <constraint firstItem="ly8-Z6-QHv" firstAttribute="centerY" secondItem="29H-mr-Jem" secondAttribute="centerY" id="v2n-uq-kIv"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="u2o-za-XPs" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="3" id="a7d-gc-zQV"/>
+                <constraint firstAttribute="trailing" secondItem="u2o-za-XPs" secondAttribute="trailing" constant="10" id="azQ-sx-2bR"/>
+                <constraint firstItem="u2o-za-XPs" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="bd3-aK-FiA"/>
+                <constraint firstAttribute="bottom" secondItem="u2o-za-XPs" secondAttribute="bottom" constant="3" id="s98-4n-TIz"/>
+            </constraints>
+            <size key="customSize" width="706" height="145"/>
+            <connections>
+                <outlet property="addressGarage" destination="ly8-Z6-QHv" id="Qil-6N-ljD"/>
+                <outlet property="addressGarageTit" destination="29H-mr-Jem" id="HXt-LU-CPu"/>
+                <outlet property="contentViewCell" destination="u2o-za-XPs" id="ocD-8L-sGT"/>
+                <outlet property="dateCreate" destination="BqM-iH-WM1" id="WQH-8f-4yk"/>
+                <outlet property="dateCreateTit" destination="R97-fe-XOY" id="f6A-cn-O4Y"/>
+                <outlet property="imageView" destination="f3r-1i-BsH" id="S2P-Cy-OFW"/>
+                <outlet property="nameGarage" destination="zR7-9X-mWJ" id="ece-wC-Zyb"/>
+            </connections>
+            <point key="canvasLocation" x="240.57971014492756" y="65.959821428571431"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="slide4" width="614" height="543"/>
+        <namedColor name="ColorLabel">
+            <color red="0.33000001311302185" green="0.33000001311302185" blue="0.33000001311302185" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TitleLabel">
+            <color red="0.078000001609325409" green="0.078000001609325409" blue="0.079999998211860657" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

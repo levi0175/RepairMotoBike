@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UILogoView" customModule="Repair_Motorbike_iOS" customModuleProvider="target">
+            <connections>
+                <outlet property="backgroundView" destination="ByR-zk-cVU" id="ESO-P2-8PX"/>
+                <outlet property="logoImageView" destination="byF-Cy-Ltq" id="Jxl-8e-4Tw"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sMX-Zl-u7X">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ByR-zk-cVU" userLabel="backgroundView">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" name="White"/>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="repair" translatesAutoresizingMaskIntoConstraints="NO" id="byF-Cy-Ltq" userLabel="logoImageView">
+                    <rect key="frame" x="103.5" y="270" width="207" height="207"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="byF-Cy-Ltq" secondAttribute="height" id="Yn1-UQ-uRh"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="ByR-zk-cVU" secondAttribute="bottom" id="ETd-oV-Mni"/>
+                <constraint firstItem="byF-Cy-Ltq" firstAttribute="centerX" secondItem="sMX-Zl-u7X" secondAttribute="centerX" id="QJn-M4-kuB"/>
+                <constraint firstItem="byF-Cy-Ltq" firstAttribute="width" secondItem="sMX-Zl-u7X" secondAttribute="width" multiplier="1/2" id="RK0-US-UJl"/>
+                <constraint firstItem="ByR-zk-cVU" firstAttribute="leading" secondItem="sMX-Zl-u7X" secondAttribute="leading" id="T8f-Ab-QLJ"/>
+                <constraint firstItem="ByR-zk-cVU" firstAttribute="top" secondItem="sMX-Zl-u7X" secondAttribute="top" id="Uht-PW-Tia"/>
+                <constraint firstAttribute="trailing" secondItem="ByR-zk-cVU" secondAttribute="trailing" id="nrR-Gb-qFb"/>
+                <constraint firstItem="byF-Cy-Ltq" firstAttribute="centerY" secondItem="sMX-Zl-u7X" secondAttribute="centerY" multiplier="5/6" id="uH3-Gy-7QF"/>
+            </constraints>
+            <point key="canvasLocation" x="265" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="repair" width="243" height="119.5"/>
+        <namedColor name="White">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Notification View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="NotificationViewController" id="Y6W-OH-hqX" customClass="NotificationViewController" customModule="Repair_Motorbike_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7yn-kn-onk">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Prp-Fc-kkh">
+                                        <rect key="frame" x="10" y="10" width="394" height="798"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Prp-Fc-kkh" secondAttribute="bottom" constant="10" id="2pv-hz-Zcq"/>
+                                    <constraint firstItem="Prp-Fc-kkh" firstAttribute="top" secondItem="7yn-kn-onk" secondAttribute="top" constant="10" id="DYd-Ds-bQB"/>
+                                    <constraint firstAttribute="trailing" secondItem="Prp-Fc-kkh" secondAttribute="trailing" constant="10" id="fB6-hL-WtP"/>
+                                    <constraint firstItem="Prp-Fc-kkh" firstAttribute="leading" secondItem="7yn-kn-onk" secondAttribute="leading" constant="10" id="t65-Mo-2RV"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7yn-kn-onk" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="JuQ-lh-oJC"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="7yn-kn-onk" secondAttribute="trailing" id="N8V-W5-bjQ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="7yn-kn-onk" secondAttribute="bottom" id="NHt-pK-AI7"/>
+                            <constraint firstItem="7yn-kn-onk" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="bM6-es-DbP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="Prp-Fc-kkh" id="jbM-Gc-qKA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="67.633928571428569"/>
+        </scene>
+        <!--Add Service View Controller-->
+        <scene sceneID="94a-T8-eUb">
+            <objects>
+                <viewController storyboardIdentifier="AddServiceViewController" id="R2f-mX-0Aq" customClass="AddServiceViewController" customModule="Repair_Motorbike_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OUH-vq-8ck">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SR2-uB-JDC">
+                                <rect key="frame" x="39" y="229" width="336" height="448"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HPH-JH-B7p">
+                                        <rect key="frame" x="0.0" y="0.0" width="336" height="89.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dịch vụ " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HRO-0i-V7y">
+                                                <rect key="frame" x="137.5" y="34.5" width="61.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="grn-t6-6Ty">
+                                                <rect key="frame" x="0.0" y="0.0" width="53" height="89.5"/>
+                                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="Backbtn">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="back:" destination="R2f-mX-0Aq" eventType="touchUpInside" id="QYw-iY-EaI"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="3.9305422019999998e-05" green="0.019963129789999999" blue="0.1317035332" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="HRO-0i-V7y" firstAttribute="centerX" secondItem="HPH-JH-B7p" secondAttribute="centerX" id="U5N-Nh-83h"/>
+                                            <constraint firstAttribute="bottom" secondItem="grn-t6-6Ty" secondAttribute="bottom" id="UAX-5p-mzV"/>
+                                            <constraint firstItem="HRO-0i-V7y" firstAttribute="centerY" secondItem="HPH-JH-B7p" secondAttribute="centerY" id="eNb-bE-lWB"/>
+                                            <constraint firstItem="grn-t6-6Ty" firstAttribute="top" secondItem="HPH-JH-B7p" secondAttribute="top" id="hqY-ct-29S"/>
+                                            <constraint firstItem="grn-t6-6Ty" firstAttribute="width" secondItem="HPH-JH-B7p" secondAttribute="width" multiplier="0.158065" id="uQc-Mb-fST"/>
+                                            <constraint firstItem="grn-t6-6Ty" firstAttribute="leading" secondItem="HPH-JH-B7p" secondAttribute="leading" id="xhq-Yy-oDp"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vV4-ik-siE" customClass="UITextbox" customModule="Repair_Motorbike_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="9.5" y="176.5" width="317" height="66.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zeh-xS-SGL" customClass="UITextbox" customModule="Repair_Motorbike_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="9.5" y="253" width="317" height="67"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jsg-ud-JyC">
+                                        <rect key="frame" x="108.5" y="352" width="119" height="35"/>
+                                        <color key="backgroundColor" red="0.74901960784313726" green="0.19607843137254902" blue="0.29803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Thêm">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="Add:" destination="R2f-mX-0Aq" eventType="touchUpInside" id="sph-Bj-Cu7"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mmq-v7-ERB" customClass="UITextbox" customModule="Repair_Motorbike_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="9.5" y="99.5" width="317" height="67"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Mmq-v7-ERB" secondAttribute="height" multiplier="271:57" id="ssw-V5-jue"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Mmq-v7-ERB" firstAttribute="width" secondItem="SR2-uB-JDC" secondAttribute="width" multiplier="0.944251" id="5gO-tW-p4l"/>
+                                    <constraint firstAttribute="width" secondItem="SR2-uB-JDC" secondAttribute="height" multiplier="0.75" id="7xX-98-4oF"/>
+                                    <constraint firstItem="Jsg-ud-JyC" firstAttribute="height" secondItem="Zeh-xS-SGL" secondAttribute="height" multiplier="0.526316" id="COj-UT-33g"/>
+                                    <constraint firstItem="Jsg-ud-JyC" firstAttribute="centerX" secondItem="Zeh-xS-SGL" secondAttribute="centerX" id="GZ7-vj-DSr"/>
+                                    <constraint firstItem="Mmq-v7-ERB" firstAttribute="centerX" secondItem="SR2-uB-JDC" secondAttribute="centerX" id="I61-Dx-TCg"/>
+                                    <constraint firstItem="Jsg-ud-JyC" firstAttribute="width" secondItem="Zeh-xS-SGL" secondAttribute="width" multiplier="0.376384" id="KxA-fD-tkY"/>
+                                    <constraint firstItem="Zeh-xS-SGL" firstAttribute="width" secondItem="vV4-ik-siE" secondAttribute="width" id="Mvw-2n-lYv"/>
+                                    <constraint firstItem="Jsg-ud-JyC" firstAttribute="top" secondItem="Zeh-xS-SGL" secondAttribute="bottom" multiplier="1.1" id="P2Y-2u-ibP"/>
+                                    <constraint firstItem="Zeh-xS-SGL" firstAttribute="height" secondItem="vV4-ik-siE" secondAttribute="height" id="QCt-1V-U5h"/>
+                                    <constraint firstItem="HPH-JH-B7p" firstAttribute="leading" secondItem="SR2-uB-JDC" secondAttribute="leading" id="S07-A6-SME"/>
+                                    <constraint firstAttribute="trailing" secondItem="HPH-JH-B7p" secondAttribute="trailing" id="Sy7-VM-nNz"/>
+                                    <constraint firstItem="Zeh-xS-SGL" firstAttribute="top" secondItem="vV4-ik-siE" secondAttribute="bottom" constant="10" id="UqM-tb-hKU"/>
+                                    <constraint firstItem="vV4-ik-siE" firstAttribute="centerX" secondItem="Mmq-v7-ERB" secondAttribute="centerX" id="Ye4-iH-UxU"/>
+                                    <constraint firstItem="Mmq-v7-ERB" firstAttribute="top" secondItem="HPH-JH-B7p" secondAttribute="bottom" constant="10" id="bZN-Zy-ORJ"/>
+                                    <constraint firstItem="HPH-JH-B7p" firstAttribute="height" secondItem="SR2-uB-JDC" secondAttribute="height" multiplier="0.2" id="chz-tV-wFg"/>
+                                    <constraint firstItem="Zeh-xS-SGL" firstAttribute="centerX" secondItem="vV4-ik-siE" secondAttribute="centerX" id="fqB-N6-kyA"/>
+                                    <constraint firstItem="vV4-ik-siE" firstAttribute="height" secondItem="Mmq-v7-ERB" secondAttribute="height" id="nHh-Eo-KFw"/>
+                                    <constraint firstItem="vV4-ik-siE" firstAttribute="width" secondItem="Mmq-v7-ERB" secondAttribute="width" id="pQp-Ta-ohq"/>
+                                    <constraint firstItem="vV4-ik-siE" firstAttribute="top" secondItem="Mmq-v7-ERB" secondAttribute="bottom" constant="10" id="s1U-43-ivA"/>
+                                    <constraint firstItem="HPH-JH-B7p" firstAttribute="top" secondItem="SR2-uB-JDC" secondAttribute="top" id="u4m-7G-Y5t"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="p3P-qA-bTF"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="SR2-uB-JDC" firstAttribute="centerY" secondItem="p3P-qA-bTF" secondAttribute="centerY" id="NjB-u9-2Op"/>
+                            <constraint firstItem="SR2-uB-JDC" firstAttribute="height" secondItem="OUH-vq-8ck" secondAttribute="height" multiplier="0.5" id="hv5-sT-PKj"/>
+                            <constraint firstItem="SR2-uB-JDC" firstAttribute="centerX" secondItem="p3P-qA-bTF" secondAttribute="centerX" id="lWK-6v-vwN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addButton" destination="Jsg-ud-JyC" id="FJd-Oy-BeC"/>
+                        <outlet property="containView" destination="SR2-uB-JDC" id="9tA-g8-vEH"/>
+                        <outlet property="nameView" destination="Mmq-v7-ERB" id="YhN-hw-3Gb"/>
+                        <outlet property="priceView" destination="vV4-ik-siE" id="ccP-7n-MZR"/>
+                        <outlet property="topView" destination="HPH-JH-B7p" id="YyI-kE-dM7"/>
+                        <outlet property="typeView" destination="Zeh-xS-SGL" id="Ng3-ih-b7d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r8K-Ee-s66" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="817" y="68"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Backbtn" width="13" height="23"/>
+    </resources>
+</document>

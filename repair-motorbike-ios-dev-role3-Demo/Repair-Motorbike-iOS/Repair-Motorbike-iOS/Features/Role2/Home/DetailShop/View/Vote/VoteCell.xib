@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="VoteCell" customModule="Repair_Motorbike_iOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="597" height="97"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="597" height="97"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dbK-7v-K26" customClass="CosmosView" customModule="Cosmos">
+                        <rect key="frame" x="6" y="6" width="135.5" height="29"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="dbK-7v-K26" secondAttribute="height" multiplier="121:26" id="kvf-PO-C6p"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
+                                <color key="value" red="1" green="0.67843137254901964" blue="0.0078431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="emptyBorderColor">
+                                <color key="value" red="1" green="0.67843137254901964" blue="0.0078431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="filledBorderColor">
+                                <color key="value" red="1" green="0.67843137254901964" blue="0.0078431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="khg-yg-BZY">
+                        <rect key="frame" x="147.5" y="8" width="24.5" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.086128678902116396" green="0.081560823701703242" blue="0.064221283401700288" alpha="0.72999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gpe-lt-tdS">
+                        <rect key="frame" x="172" y="8" width="15" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.086128678902116396" green="0.081560823701703242" blue="0.064221283401700288" alpha="0.72999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(16 bình luận)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q8f-RM-L8U">
+                        <rect key="frame" x="197" y="8" width="104" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.086128678902116396" green="0.081560823701703242" blue="0.064221283401700288" alpha="0.72999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pwe-sm-4ep">
+                        <rect key="frame" x="157.5" y="41.5" width="282" height="35"/>
+                        <color key="backgroundColor" red="1" green="0.13520882397272949" blue="0.00047483061400044324" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Pwe-sm-4ep" secondAttribute="height" multiplier="250:31" id="8cg-zx-uKs"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" title="Viết đánh giá ">
+                            <color key="titleColor" red="0.91372549020000005" green="0.91399997470000005" blue="0.91399997470000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="voteButton:" destination="gTV-IL-0wX" eventType="touchUpInside" id="yjq-do-7oa"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Pwe-sm-4ep" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" multiplier="1.1" id="0F7-rl-baR"/>
+                <constraint firstItem="gpe-lt-tdS" firstAttribute="centerY" secondItem="khg-yg-BZY" secondAttribute="centerY" id="0TD-CQ-TGp"/>
+                <constraint firstItem="dbK-7v-K26" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.3" id="4d0-OG-Wjt"/>
+                <constraint firstItem="q8f-RM-L8U" firstAttribute="centerY" secondItem="gpe-lt-tdS" secondAttribute="centerY" id="Bgm-Ct-wtY"/>
+                <constraint firstItem="Pwe-sm-4ep" firstAttribute="height" secondItem="dbK-7v-K26" secondAttribute="height" multiplier="1.2" id="Dvi-uj-G4g"/>
+                <constraint firstItem="khg-yg-BZY" firstAttribute="centerY" secondItem="dbK-7v-K26" secondAttribute="centerY" multiplier="0.9" id="K6r-Ik-gpR"/>
+                <constraint firstItem="q8f-RM-L8U" firstAttribute="leading" secondItem="gpe-lt-tdS" secondAttribute="trailing" constant="10" id="OA4-cP-meF"/>
+                <constraint firstItem="khg-yg-BZY" firstAttribute="leading" secondItem="dbK-7v-K26" secondAttribute="trailing" constant="6" id="g35-qU-Pli"/>
+                <constraint firstItem="gpe-lt-tdS" firstAttribute="leading" secondItem="khg-yg-BZY" secondAttribute="trailing" id="rHI-KF-2nJ"/>
+                <constraint firstItem="dbK-7v-K26" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="6" id="tvQ-Ga-h6B"/>
+                <constraint firstItem="Pwe-sm-4ep" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="u4O-aB-zRC"/>
+                <constraint firstItem="dbK-7v-K26" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="6" id="wvN-wg-oop"/>
+            </constraints>
+            <size key="customSize" width="597" height="97"/>
+            <connections>
+                <outlet property="btnVote" destination="Pwe-sm-4ep" id="Ios-m5-7rJ"/>
+                <outlet property="cosmosView" destination="dbK-7v-K26" id="2aZ-Ef-W0t"/>
+                <outlet property="numberComment" destination="q8f-RM-L8U" id="qBu-ha-jSY"/>
+                <outlet property="numberVote" destination="khg-yg-BZY" id="5vH-p2-D6U"/>
+            </connections>
+            <point key="canvasLocation" x="94.927536231884062" y="92.745535714285708"/>
+        </collectionViewCell>
+    </objects>
+    <designables>
+        <designable name="dbK-7v-K26">
+            <size key="intrinsicContentSize" width="120" height="20"/>
+        </designable>
+    </designables>
+</document>

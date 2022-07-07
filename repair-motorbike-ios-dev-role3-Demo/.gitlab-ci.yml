@@ -1,0 +1,27 @@
+# This file is a template, and might need editing before it works on your project.
+# To contribute improvements to CI/CD templates, please follow the Development guide at:
+# https://docs.gitlab.com/ee/development/cicd/templates.html
+# This specific template is located at:
+# https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Swift.gitlab-ci.yml
+
+# Lifted from: https://about.gitlab.com/2016/03/10/setting-up-gitlab-ci-for-ios-projects/
+# This file assumes an own GitLab CI runner, setup on a macOS system.
+stages:
+  - lint and build
+
+# Default script, this executes copying all pod dependencies instead of pullling from remote repos
+default:
+  before_script:
+    - echo Generates Dependencies
+
+# Linting source code job using swiftlint
+lint_source:
+  stage: lint and build
+  tags:
+    - swiftlint
+  only:
+    refs: 
+      - merge_requests
+  script:
+    - echo Linting And Build Source Code Phase
+    - swiftlint --strict
